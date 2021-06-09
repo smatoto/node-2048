@@ -19,7 +19,7 @@ steps:
       - 'managed'
       - '--memory'
       - '512Mi'
-      - '--allow-unauthenticated '
+      - '--allow-unauthenticated'
 
 images:
   - gcr.io/$PROJECT_ID/game-2048
