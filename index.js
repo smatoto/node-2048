@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.send('Hello Express app');
+  res.send('Node 2048 App');
 });
 
 app.listen(port, () => console.log(`Listening at port ${port}`));
