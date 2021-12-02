@@ -8,18 +8,7 @@ steps:
   # Deploy container image to Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
-      - 'run'
+      - 'app'
       - 'deploy'
-      - 'game-2048'
-      - '--image'
-      - 'gcr.io/$PROJECT_ID/game-2048'
-      - '--region'
-      - 'asia-southeast1'
-      - '--platform'
-      - 'managed'
-      - '--memory'
-      - '512Mi'
-      - '--allow-unauthenticated'
-
 images:
   - gcr.io/$PROJECT_ID/game-2048
